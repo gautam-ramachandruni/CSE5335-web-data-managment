@@ -23,4 +23,4 @@ The program inserts an overlay marker on the Google map pinned on the latest hou
 
 2.	By clicking on a house on the map
 
-Note that the call to the GetSearchResults API is done using Ajax: inside the callback function (the listener for the left click) of the map, an Ajax request that calls the GetSearchResults API is created. Note that everything is done asynchronously and the webpage is never redrawn completely.
+Note that the call to the GetSearchResults API is done using Ajax: inside the callback function (the listener for the left click) of the map, an Ajax request that calls the GetSearchResults API is created. Note that everything is done asynchronously and the web page is never redrawn completely.
