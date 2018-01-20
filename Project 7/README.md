@@ -18,3 +18,21 @@ The following queries were expressed using XQuery and run against the file, auc
 7.	Give an alphabetically ordered list of all items along with their location
 
 8.	List the reserve prices of those open auctions where a certain person with id person3 issued a bid before another person with id person6.
+
+Each answer is enclosed in <queryx> </queryx> tags - where x is the question number (1…8). Likewise, each answer is further enclosed in the following tags:
+
+Query 1 - <itemcount> </itemcount>
+
+Query 2 - <europeitems> </europeitems>
+
+Query 3 - <purchases> </purchases>
+
+Query 4 - <category> </category>
+
+Query 5 - <categorysize> </categorysize>
+
+Query 6 - <europebuyers> </europebuyers>
+
+Query 7 - <ordereditems> </ordereditems>
+
+Query 8 - <prices> </prices> 
