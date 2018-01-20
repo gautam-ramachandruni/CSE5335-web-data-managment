@@ -1,5 +1,5 @@
 # Web Mashup: Display House Prices on a Map
-The goal of this project is to create a web mashup that combines two web services: Google Maps and the Zillow API, using JavaScript and AJAX. When you click on a house on the map, your application will display the postal address and the estimated price of the house.
+The goal of this project is to create a web mashup that combines two web services: Google Maps and the Zillow API, using JavaScript and AJAX. When you click on a house on the map, this application will display the postal address and the estimated price of the house.
 For this project, you will use the
 •	Real Estate API from the Zillow API (more specifically, GetSearchResults)
 •	Geocoding and Reverse Geocoding from the Google Maps JavaScript API
