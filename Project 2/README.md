@@ -1,3 +1,4 @@
+# README
 Along with XAMPP web server, the Web Service REST API of the music application Last.fm is used. Firstly, an API access key needs to be retrieved from Last.fm. The access key will allow the user to send web service requests to Last.fm (maximum 1 request per second).
 
 The project is to develop a web application to get information about music artists, their albums, etc. This application is developed using plain JavaScript and Ajax. The Ajax requests return JSON, not XML. Note that everything is done asynchronously and the web page is never redrawn/refreshed completely. This means that the buttons or any other input element in the HTML forms have JavaScript actions, and are not regular HTTP requests.
