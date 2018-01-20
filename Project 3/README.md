@@ -9,12 +9,15 @@ For this project, the following are used:
 
 •	Google Map Markers
 
-An API key is needed to use Google Maps. Fetching a Zillow API requires the user to register and obtain a web service ID from Zillow Web Services ID(ZWSID). 
-You need to edit the HTML file map.html and the JavaScript file map.js. Your HTML web page must have 3 sections:
-1.	a text input with two buttons: Find and Clear.
-2.	a Google map of size 600*500 pixels, initially centered at (32.75, -97.13) with zoom level 17
-3.	a text display area
-Your program must insert an overlay marker on the Google map pinned on the latest house that displays the house's postal address and its Zestimate value (the house value) from zillow.com. The text display area is the history log that displays all the houses (addresses and prices) that you have found so far (latest hous is last). Each time you find a house, you erase the old marker from the map (if any), you display a new marker on the map on the house location (with address and price), and you append this information to the display area. There are two ways to find a house:
+An API key is needed to use Google Maps. Fetching a Zillow API requires the user to register and obtain a web service ID from Zillow Web Services ID (ZWSID). The HTML page has three sections:
+
+1. A text input with two buttons: Find and Clear
+
+2. A Google map of size 600*500 pixels, initially centered at (32.75, -97.13) with zoom level 17
+
+3. A text display area
+
+The program inserts an overlay marker on the Google map pinned on the latest house that displays the house's postal address and its Zestimate value (the house value) from zillow.com. The text display area is the history log that displays all the houses (addresses and prices) that you have found so far (latest hous is last). Each time you find a house, you erase the old marker from the map (if any), you display a new marker on the map on the house location (with address and price), and you append this information to the display area. There are two ways to find a house:
 1.	by providing a valid postal address, say "904 Austin St, Arlington, TX 76012", in the text input and you push the Find button.
 2.	by clicking on a house on the map.
 To implement the first way, you need to get the address from the text input and send an asynchronous request to the Zillow API (GetSearchResults API) to retrieve the Zestimate (in $), which is the estimated home value of the house at that address. The address used by the GetSearchResults API must have two components: address and citystatezip. This means that you must use JavaScript code to break the address string from the input text area into these two strings. Then you clear the old marker and insert a new overlay marker on the map at the latitude and longitude of this postal address, using Geocoding. To implement the second way, when you click on the map, your program must find the address of the point you clicked (using Reverse Geocoding) and must send an asynchronous request to the Zillow API (GetSearchResults API) to retrieve the Zestimate (in $), which is the estimated home value of the house at that address. The you do the same as the first way.
