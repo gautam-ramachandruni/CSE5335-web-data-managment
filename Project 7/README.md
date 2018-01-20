@@ -19,4 +19,4 @@ The following queries were expressed using XQuery and run against the file, auc
 
 8.	List the reserve prices of those open auctions where a certain person with id person3 issued a bid before another person with id person6.
 
-Each answer is enclosed in <queryx> </queryx> tags - where x is the question number (1…8).
+Each answer is enclosed in "<queryx> </queryx>" tags - where x is the question number (1…8).
