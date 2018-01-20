@@ -1,4 +1,4 @@
-# README
+# A JavaScript Game
 You need to write a JavaScript file pong.js, used in the file pong.html, that implements the following actions:
 
 •	initialize: initialize the game
