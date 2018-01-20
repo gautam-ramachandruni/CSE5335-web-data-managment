@@ -16,3 +16,11 @@ There are two PHP scripts, login.php and board.php. The login.php script ge
 •	A button "Reply" to reply to this message
 
 From the login script, if the user enters a wrong username/password and pushes "Login", it goes to the login script again. If the user enters a correct username/password and pushes "Login", it goes to the board script. From the board script, if the user pushes "Logout", it logs out and goes to the login script. From the board script, if the user fills out the textarea and pushes the "New Post" button, it will insert the new message in the database (with null replyto attribute) and will go to the board script again. If the user fills out the textarea and pushes the "Reply" button, it will insert the message in the database - but this time the replyto value must be set, and will go to the board script again.
+
+When logging in, the ‘Submit’ button must be clicked twice for a successful login. Messages such as the following are displayed for convenience:
+	
+1. “Invalid username or password, please try again!” - when username or password doesn’t match with registered users in the ‘users’ table
+
+2. “No users found in database” - if no users are manually registered in the board.php and the ‘users’ table is empty
+
+When displaying messages as a list, if a message has no ‘replyto’ id associated with it, then it is displayed as an empty space between the commas. In order to reply to a message, user must first type their message in the text area and then click on the ‘Reply’ button associated with the message they wish to reply to.
