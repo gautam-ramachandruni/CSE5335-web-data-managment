@@ -24,3 +24,5 @@ The program inserts an overlay marker on the Google map pinned on the latest hou
 2.	By clicking on a house on the map
 
 Note that the call to the GetSearchResults API is done using Ajax: inside the callback function (the listener for the left click) of the map, an Ajax request that calls the GetSearchResults API is created. Note that everything is done asynchronously and the web page is never redrawn completely.
+
+For addresses not having a Zestimate, a pop-up in the form of an alert appears indicating to the user that Zillow does not have a Zestimate available for the searched address. Only after the alert message is closed, the overlay content and text display area is populated with addresses not having a Zestimate.
