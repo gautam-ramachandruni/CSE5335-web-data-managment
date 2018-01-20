@@ -1,9 +1,14 @@
 # README
 You need to write a JavaScript file pong.js, used in the file pong.html, that implements the following actions:
+
 •	initialize: initialize the game
+
 •	startGame: starts the game (when you click the mouse)
+
 •	setSpeed: sets the speed to 0 (slow), 1 (medium), 2 (fast)
+
 •	resetGame: resets the game
+
 •	movePaddle: moves the paddle up and down, by folowing the mouse
 
 The pong court is 800x500px, the pong ball is 20x20px, and the paddle is 102x14px. When you click on the Start button or left-click on the court, the ball must start from a random place at the left border of the court at a random angle between -π/4 and π/4. The paddle can move up and down on the right border by just moving the mouse (without clicking the mouse). The ball bounces on the left, top, and bottom borders of the court. Everytime you hit the ball with the paddle, you add one strike. 
